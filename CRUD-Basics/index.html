@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
     <title>CRUD Basics</title>
   </head>
   <body>
@@ -21,6 +22,7 @@
           <br /><br />
           <textarea name="" id="input" cols="30" rows="10"></textarea>
           <br /><br />
+          <div id="msg"></div>
           <button type="submit">Post</button>
         </form>
       </div>
@@ -30,15 +32,15 @@
           <div>
             <p>Post 1</p>
             <span class="options">
-              <i class="fas fa-edit"></i>
-              <i class="fas fa-trash-alt"></i>
+              <i onClick="editPost(this)" class="fas fa-edit"></i>
+              <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
             </span>
           </div>
           <div>
             <p>Post 2</p>
             <span class="options">
-              <i class="fas fa-edit"></i>
-              <i class="fas fa-trash-alt"></i>
+              <i onClick="editPost(this)" class="fas fa-edit"></i>
+              <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
             </span>
           </div>
         </div>
