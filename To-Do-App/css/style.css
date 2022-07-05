@@ -46,3 +46,7 @@ body {
   display: flex;
   gap: 20px;
 }
+
+#msg {
+  color: red;
+}
